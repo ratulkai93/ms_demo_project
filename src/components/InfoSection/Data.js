@@ -7,9 +7,9 @@ export const uberPage=()=>{
     window.open("https://www.ubereats.com/ca/store/mae-sri-comptoir-thai-milton/fB2G9G3DRgaUCFMxtCI04Q")
 }
 
-// export const doordashPage=()=>{
-//     window.open("https://www.doordash.com/store/mae-sri-comptoir-thai-montr%C3%A9al-896364/")
-// }
+export const doordashPage=()=>{
+    window.open("https://www.doordash.com/store/mae-sri-comptoir-thai-montr%C3%A9al-896364/")
+}
 
 export const homeObjOne= {
     id:'about',
@@ -37,12 +37,14 @@ export const homeObjTwo= {
     topLine: 'Order Online',
     heading: 'Delivering the taste of thailand to your doorsteps',
     description: 'Available for delivery with both Uber and Doordash',
-    buttonLabel: 'Uber', //add google link to the resto
+    buttonLabel: 'Uber Eats', //add google link to the resto
+    buttonLabel2: 'Doordash',
     imgStart: false,
     img: require('../../images/ms4.jpg'),
     alt: 'resto',
     dark: true,
     primary: true,
     darkText: false,
-    pageLink: uberPage
+    pageLink: uberPage,
+    pageLink2: doordashPage
 };
