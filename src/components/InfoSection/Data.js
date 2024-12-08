@@ -40,7 +40,7 @@ export const homeObjTwo= {
     buttonLabel: 'Uber Eats', //add google link to the resto
     buttonLabel2: 'Doordash',
     imgStart: false,
-    img: require('../../images/ms4.jpg'),
+    img: require('../../images/ms5.jpg'),
     alt: 'resto',
     dark: true,
     primary: true,
