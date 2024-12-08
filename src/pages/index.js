@@ -16,13 +16,13 @@ const Home = () => {
 
   return (
     <>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle= {toggle} />
-        <HeroSection/>
-        <InfoSection {...homeObjOne}/> {/**for find us page */}
+        {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+        {/* <Navbar toggle= {toggle} /> */}
+        {/* <HeroSection/> */}
+        {/* <InfoSection {...homeObjOne}/> *for find us page */}
         <MenuSection/>
-        <InfoSection {...homeObjTwo}/>{/**for order online page  */}
-        <Footer/>
+        {/* <InfoSection {...homeObjTwo}/>*for order online page  */}
+        {/* <Footer/> */}
     </>
   );
 };
