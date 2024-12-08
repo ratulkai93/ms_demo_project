@@ -35,6 +35,7 @@ export const MenuContent=styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 80px;
     justify-content: space-between; /* Adjusts spacing between items */
 `
 export const MenuA= styled.a`

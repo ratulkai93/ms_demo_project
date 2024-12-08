@@ -17,6 +17,7 @@ import {
 //boiler plate code for all info pages
 const InfoSection = ({
     pageLink,
+    pageLink2,
     lightBg,
     id, 
     imgStart, 
@@ -25,7 +26,8 @@ const InfoSection = ({
     heading, 
     darkText, 
     description, 
-    buttonLabel, 
+    buttonLabel,
+    buttonLabel2, 
     img, 
     alt,
     primary,
@@ -57,6 +59,23 @@ const InfoSection = ({
                                 >
                                     {buttonLabel}
                                 </Button>
+                                
+                                {pageLink2 ? (
+                                    <Button
+                                        to='home' 
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80}
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        dark2={dark2 ? 1 : 0}
+                                        onClick={pageLink2}
+                                    >
+                                        {buttonLabel2}
+                                    </Button>
+                                ) : null}
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>

@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
 import MenuSection from '../components/MenuSection';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const [isOpen,setIsOpen] = useState(false)
@@ -15,13 +16,13 @@ const Home = () => {
 
   return (
     <>
-        {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+        <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle= {toggle} />
-        {/* <HeroSection/> */}
-        {/* <InfoSection {...homeObjOne}/> */}
+        <HeroSection/>
+        <InfoSection {...homeObjOne}/> {/**for find us page */}
         <MenuSection/>
-        {/* <InfoSection {...homeObjTwo}/> */}
-
+        <InfoSection {...homeObjTwo}/>{/**for order online page  */}
+        <Footer/>
     </>
   );
 };
