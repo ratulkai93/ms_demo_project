@@ -27,8 +27,7 @@ const HeroSection = () => {
         <HeroBg>
           {/* to fix later */}
             {/* <VideoBg autoPlay loop muted src={video1} type='video/mp4'/> */}
-          <HeroImg src={ms}/> 
-          {/* temp solution */}
+          <HeroImg src={ms}/>{/* temp solution */}
         </HeroBg>
         <HeroContent>
           <HeroH1>Mae Sri Thai</HeroH1>
@@ -41,7 +40,6 @@ const HeroSection = () => {
               onMouseLeave={onHover}
               primary= 'true'
               dark='true'
-              // create link to the menu page
               >
               see our menu {hover ?  <ArrowForward/> : <ArrowRight/>}
             </Button>

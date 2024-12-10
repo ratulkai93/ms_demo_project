@@ -1,4 +1,5 @@
 import React from 'react'
+import{animateScroll as scroll} from 'react-scroll'
 import { 
     FooterContainer,
     FooterWrap,
@@ -13,7 +14,13 @@ import {
     SocialMedia,
     SocialMediaWrap } from './FooterElements'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { doordashPage, facebookPage, instaPage, uberPage } from '../InfoSection/Data'
 const Footer = () => {
+
+    const toggleHome=()=>{
+        scroll.scrollToTop();
+      }
+
   return (
     <FooterContainer>
         <FooterWrap>
@@ -31,25 +38,25 @@ const Footer = () => {
                 <FooterLinksWrapper>
                 <FooterLinkItems>
                         <FooterLinkTitle>Order online</FooterLinkTitle>
-                        <FooterLink to='/'>UberEats</FooterLink>
-                        <FooterLink to='/'>Doordash </FooterLink>
+                        <FooterLink onClick={uberPage}>UberEats</FooterLink>
+                        <FooterLink onClick={doordashPage}>Doordash </FooterLink>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Follow US</FooterLinkTitle>
-                        <FooterLink to='/'>Instagram </FooterLink>
-                        <FooterLink to='/'>Facebook </FooterLink>
+                        <FooterLink onClick={instaPage}>Instagram </FooterLink>
+                        <FooterLink onClick={facebookPage}>Facebook </FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
                 <SocialMediaWrap>
-                    <SocialLogo to='/'>Mae Sri</SocialLogo>
+                    <SocialLogo onClick={toggleHome}>Mae Sri</SocialLogo>
                     <SocialIcons>
-                        <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                            <FaFacebook/>
+                        <SocialIconLink  aria-label="Facebook">
+                            <FaFacebook onClick={facebookPage}/>
                         </SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                            <FaInstagram/>
+                        <SocialIconLink  aria-label="Instagram" >
+                            <FaInstagram onClick={instaPage}/>
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>

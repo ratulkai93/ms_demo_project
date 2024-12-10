@@ -1,4 +1,10 @@
-//helper function for onCLick to mae sri google page
+//helper function for onCLick to mae sri pages
+export const facebookPage=()=>{
+    window.open("https://www.facebook.com/maesrithai1")
+}
+export const instaPage=()=>{
+  window.open("https://www.instagram.com/maesrithai/")
+}
 export const mapPage=()=>{
     window.open("https://maps.app.goo.gl/tN1vi5EdLcLzrK978")
 }
@@ -30,7 +36,7 @@ export const homeObjOne= {
 };
 
 export const homeObjTwo= {
-    id:'about',
+    id:'order_online',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

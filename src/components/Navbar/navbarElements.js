@@ -4,6 +4,7 @@ import {Link as LinkScroll} from 'react-scroll'
 
 export const Nav = styled.nav`
     background: #000;
+    /* background-color: ${({scrollNav})=>(scrollNav ? '#000':'transparent')}; */
     height: 80px;
     /* margin-top: -80px;*/
     display: flex;
@@ -82,38 +83,9 @@ export const NavLinks= styled(LinkScroll)`
         transition: 0.2s ease-in-out;
     }
     &.active{
-        border-bottom: 3px solid #01bf71; /* underline color */
-    
+        border-bottom: 3px solid #FFD700; /* underline color */    
     }
 `
-// export const NavBtn=styled.nav`
-//     display:flex;
-//     align-items: center;
-
-//     @media scren and (max-width: 768px){
-//     display: none;
-//     }
-// `
-
-// export const NavBtnLink= styled(LinkR)`
-//     border-radius: 50px;
-//     background: #01bf71;
-//     white-space: nowrap;
-//     padding: 10px 22px;
-//     color: #010606;
-//     font-size: 16px;
-//     outline: none;
-//     border: none;
-//     cursor: pointer;
-//     transition: all 0.2s ease-in-out;
-//     text-decoration: none;
-
-//     &:hover{
-//     transition: all 0.2s ease-in-out;
-//     background: #fff;
-//     color: #010606;
-//     }
-// `;
 
 export const NavLangBtn=styled.nav`
     display:flex;

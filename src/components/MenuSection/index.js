@@ -5,10 +5,9 @@ import menu_en from '../../pdfs/menu_en.pdf'
 import menu_fr from '../../pdfs/menu_fr.pdf'
 
 const MenuSection = () => {
-   
 
   return (
-    <MenuContainer>
+    <MenuContainer id='menu'>
         <MenuBg>
             <MenuImg src={ms2}/>
         </MenuBg>
